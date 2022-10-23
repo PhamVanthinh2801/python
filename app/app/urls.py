@@ -3,7 +3,6 @@ from django.urls import path
 from django.http import HttpResponse
 import json
 
-
 def getHelloWorld(request):
     response_data = {"name": 'hello world'}
     return HttpResponse(json.dumps(response_data), content_type="application/json")
